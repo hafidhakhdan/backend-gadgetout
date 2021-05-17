@@ -1,16 +1,26 @@
 {
   "name": "gadgetout",
   "version": "1.0.0",
-  "description": "",
+  "description": "backend-gadgetout",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Hafidh Akhdan N",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.21.1",
     "cors": "^2.8.5",
-    "express": "^4.17.1"
-  }
+    "express": "^4.17.1",
+    "qs-stringify": "^1.2.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hafidhakhdan/backend-gadgetout.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hafidhakhdan/backend-gadgetout/issues"
+  },
+  "homepage": "https://github.com/hafidhakhdan/backend-gadgetout#readme"
 }
