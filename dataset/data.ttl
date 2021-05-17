@@ -1,0 +1,227 @@
+@prefix data: <http://example.com/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+data:1 rdf:type data:handphone;
+    data:id "113101";
+    data:title "Samsung S21";
+    data:brand "Samsung";
+    data:harga "10000000";
+    data:RAM "8 Gb";
+    data:ROM "128 Gb";
+    data:battery "4000 mAh";
+    data:screen "6.2 inch";
+    data:urlFoto "";
+    .
+
+data:2 rdf:type data:handphone;
+    data:id "113102";
+    data:title "Poco X3 NFC";
+    data:brand "Poco";
+    data:harga "3800000";
+    data:RAM "6 Gb";
+    data:ROM "64 Gb";
+    data:battery "6000 mAh";
+    data:screen "6.67 Inch";
+    data:urlFoto "";
+    .
+
+data:3 rdf:type data:handphone;
+    data:id "113103";
+    data:title "Xiaomi Redmi 9T";
+    data:brand "Xiaomi";
+    data:harga "2273000";
+    data:RAM "6 Gb";
+    data:ROM "128 Gb";
+    data:battery "6000 mAh";
+    data:screen "6.53 Inch";
+    data:urlFoto "";
+    .
+
+data:4 rdf:type data:handphone;
+    data:id "113104";
+    data:title "Realme C15";
+    data:brand "Realme";
+    data:harga "1519900";
+    data:RAM "4 Gb";
+    data:ROM "64 Gb";
+    data:battery "6000 mAh";
+    data:screen "6.5 Inch";
+    data:urlFoto "";
+    .
+data:5 rdf:type data:handphone;
+    data:id "113105";
+    data:title "Oppo A92";
+    data:brand "Oppo";
+    data:harga "2450000";
+    data:RAM "8 Gb";
+    data:ROM "128 Gb";
+    data:battery "5000 mAh";
+    data:screen "5.6 Inch";
+    data:urlFoto "";
+.
+data:6 rdf:type data:handphone;
+    data:id "113106";
+    data:title "Oppo F7";
+    data:brand "Oppo";
+    data:harga "1450000";
+    data:RAM "4 Gb";
+    data:ROM "64 Gb";
+    data:battery "3400 mAh";
+    data:screen "6.23 Inch";
+    data:urlFoto "";
+.
+data:7 rdf:type data:handphone;
+    data:id "113107";
+    data:title "Iphone XR";
+    data:brand "Apple";
+    data:harga "8399000";
+    data:RAM "3 Gb";
+    data:ROM "128 Gb";
+    data:battery "2716 mAh";
+    data:screen "6.1 Inch";
+    data:urlFoto "";
+.
+data:8 rdf:type data:handphone;
+    data:id "113108";
+    data:title "Iphone XS Max";
+    data:brand "Apple";
+    data:harga "11499000";
+    data:RAM "4 Gb";
+    data:ROM "512 Gb";
+    data:battery "3174 mAh";
+    data:screen "6.5 Inch";
+    data:urlFoto "";
+.
+data:9 rdf:type data:handphone;
+    data:id "113109";
+    data:title "Iphone 12 Pro";
+    data:brand "Apple";
+    data:harga "19000000";
+    data:RAM "6 Gb";
+    data:ROM "256 Gb";
+    data:battery " 2815 mAh";
+    data:screen "6.1 Inch";
+    data:urlFoto "";
+.
+data:10 rdf:type data:handphone;
+    data:id "113110";
+    data:title "Vivo V19";
+    data:brand "Vivo";
+    data:harga "3950000";
+    data:RAM "8 Gb";
+    data:ROM "128 Gb";
+    data:battery "4500 mAh";
+    data:screen "6.44 Inch";
+    data:urlFoto "";
+.
+data:11 rdf:type data:handphone;
+    data:id "113111";
+    data:title "Samsung A51";
+    data:brand "Samsung";
+    data:harga "3800000";
+    data:RAM "4 Gb";
+    data:ROM "128 Gb";
+    data:battery "4000 mAh";
+    data:screen "6.5 Inch";
+    data:urlFoto "";
+.
+data:12 rdf:type data:handphone;
+    data:id "113112";
+    data:title "Samsung A52";
+    data:brand "Samsung";
+    data:harga "4709000";
+    data:RAM "8 Gb";
+    data:ROM "128 Gb";
+    data:battery "4500 mAh";
+    data:screen "6.5 Inch";
+    data:urlFoto "";
+.
+data:13 rdf:type data:handphone;
+    data:id "113113";
+    data:title "Oppo Find X2";
+    data:brand "Oppo";
+    data:harga "10849999";
+    data:RAM "12 Gb";
+    data:ROM "256 Gb";
+    data:battery "4200 mAh";
+    data:screen "6.7 Inch";
+    data:urlFoto "";
+.
+data:14 rdf:type data:handphone;
+    data:id "113114";
+    data:title "Xiaomi Mi Note 10";
+    data:brand "Xiaomi";
+    data:harga "6950000";
+    data:RAM "8 Gb";
+    data:ROM "256 Gb";
+    data:battery "5260 mAh";
+    data:screen "6.47 Inch";
+    data:urlFoto "";
+.
+data:15 rdf:type data:handphone;
+    data:id "113115";
+    data:title "Poco X3 Pro";
+    data:brand "Poco";
+    data:harga "3549000";
+    data:RAM "6 Gb";
+    data:ROM "128 Gb";
+    data:battery "5160 mAh";
+    data:screen "6.67 Inch";
+    data:urlFoto "";
+.
+data:16 rdf:type data:handphone;
+    data:id "113116";
+    data:title "Poco X3 Pro";
+    data:brand "Poco";
+    data:harga "3990000";
+    data:RAM "8 Gb";
+    data:ROM "256 Gb";
+    data:battery "5160 mAh";
+    data:screen "6.67 Inch";
+    data:urlFoto "";
+.
+data:17 rdf:type data:handphone;
+    data:id "113117";
+    data:title "Realme Narzo";
+    data:brand "Realme";
+    data:harga "2850000";
+    data:RAM "4 Gb";
+    data:ROM "128 Gb";
+    data:battery "4300 mAh";
+    data:screen "6.5 Inch";
+    data:urlFoto "";
+.
+data:18 rdf:type data:handphone;
+    data:id "113118";
+    data:title "Realme 6";
+    data:brand "Realme";
+    data:harga "2800000";
+    data:RAM "4 Gb";
+    data:ROM "128 Gb";
+    data:battery "4300 mAh";
+    data:screen "6.5 Inch";
+    data:urlFoto "";
+.
+
+data:19 rdf:type data:handphone;
+    data:id "113119";
+    data:title "Samsung A72";
+    data:brand "Samsung";
+    data:harga "5699000";
+    data:RAM "8 Gb";
+    data:ROM "128 Gb";
+    data:battery "5000 mAh";
+    data:screen "6.7 Inch";
+    data:urlFoto "";
+.
+data:20 rdf:type data:handphone;
+    data:id "113120";
+    data:title "Asus ROG Phone 3";
+    data:brand "Asus";
+    data:harga "12250000";
+    data:RAM "12 Gb";
+    data:ROM "256 Gb";
+    data:battery "6000 mAh";
+    data:screen "6.59 Inch";
+    data:urlFoto "";
+.
