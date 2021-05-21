@@ -10,7 +10,7 @@ data:1 rdf:type data:handphone;
     data:ROM "128 Gb";
     data:battery "4000 mAh";
     data:screen "6.2 inch";
-    data:urlFoto "";
+    data:urlFoto "https://media.pricebook.co.id/images/product/M/94662_M_1.jpg";
     .
 
 data:2 rdf:type data:handphone;
@@ -22,7 +22,7 @@ data:2 rdf:type data:handphone;
     data:ROM "64 Gb";
     data:battery "6000 mAh";
     data:screen "6.67 Inch";
-    data:urlFoto "";
+    data:urlFoto "https://media.pricebook.co.id/images/product/M/93999_M_1.jpg";
     .
 
 data:3 rdf:type data:handphone;
@@ -34,7 +34,7 @@ data:3 rdf:type data:handphone;
     data:ROM "128 Gb";
     data:battery "6000 mAh";
     data:screen "6.53 Inch";
-    data:urlFoto "";
+    data:urlFoto "https://media.pricebook.co.id/images/product/M/95085_M_1.jpg";
     .
 
 data:4 rdf:type data:handphone;
@@ -46,7 +46,7 @@ data:4 rdf:type data:handphone;
     data:ROM "64 Gb";
     data:battery "6000 mAh";
     data:screen "6.5 Inch";
-    data:urlFoto "";
+    data:urlFoto "https://media.pricebook.co.id/images/product/M/93352_M_1.jpg";
     .
 data:5 rdf:type data:handphone;
     data:id "113105";
@@ -57,7 +57,7 @@ data:5 rdf:type data:handphone;
     data:ROM "128 Gb";
     data:battery "5000 mAh";
     data:screen "5.6 Inch";
-    data:urlFoto "";
+    data:urlFoto "https://media.pricebook.co.id/images/product/M/92963_M_1.jpg";
 .
 data:6 rdf:type data:handphone;
     data:id "113106";
@@ -68,7 +68,7 @@ data:6 rdf:type data:handphone;
     data:ROM "64 Gb";
     data:battery "3400 mAh";
     data:screen "6.23 Inch";
-    data:urlFoto "";
+    data:urlFoto "https://media.pricebook.co.id/images/product/M/77761_M_1.webp";
 .
 data:7 rdf:type data:handphone;
     data:id "113107";
@@ -79,7 +79,7 @@ data:7 rdf:type data:handphone;
     data:ROM "128 Gb";
     data:battery "2716 mAh";
     data:screen "6.1 Inch";
-    data:urlFoto "";
+    data:urlFoto "https://media.pricebook.co.id/images/product/M/80358_M_1.webp";
 .
 data:8 rdf:type data:handphone;
     data:id "113108";
@@ -90,7 +90,7 @@ data:8 rdf:type data:handphone;
     data:ROM "512 Gb";
     data:battery "3174 mAh";
     data:screen "6.5 Inch";
-    data:urlFoto "";
+    data:urlFoto "https://media.pricebook.co.id/images/product/M/80361_M_1.webp";
 .
 data:9 rdf:type data:handphone;
     data:id "113109";
@@ -101,7 +101,7 @@ data:9 rdf:type data:handphone;
     data:ROM "256 Gb";
     data:battery " 2815 mAh";
     data:screen "6.1 Inch";
-    data:urlFoto "";
+    data:urlFoto "https://media.pricebook.co.id/images/product/M/93985_M_1.jpg";
 .
 data:10 rdf:type data:handphone;
     data:id "113110";
@@ -112,7 +112,7 @@ data:10 rdf:type data:handphone;
     data:ROM "128 Gb";
     data:battery "4500 mAh";
     data:screen "6.44 Inch";
-    data:urlFoto "";
+    data:urlFoto "https://media.pricebook.co.id/images/product/M/92358_M_1.webp";
 .
 data:11 rdf:type data:handphone;
     data:id "113111";
@@ -123,7 +123,7 @@ data:11 rdf:type data:handphone;
     data:ROM "128 Gb";
     data:battery "4000 mAh";
     data:screen "6.5 Inch";
-    data:urlFoto "";
+    data:urlFoto "https://media.pricebook.co.id/images/product/M/91550_M_1.webp";
 .
 data:12 rdf:type data:handphone;
     data:id "113112";
@@ -134,7 +134,7 @@ data:12 rdf:type data:handphone;
     data:ROM "128 Gb";
     data:battery "4500 mAh";
     data:screen "6.5 Inch";
-    data:urlFoto "";
+    data:urlFoto "https://media.pricebook.co.id/images/product/M/95305_M_1.jpg";
 .
 data:13 rdf:type data:handphone;
     data:id "113113";
@@ -145,18 +145,18 @@ data:13 rdf:type data:handphone;
     data:ROM "256 Gb";
     data:battery "4200 mAh";
     data:screen "6.7 Inch";
-    data:urlFoto "";
+    data:urlFoto "https://media.pricebook.co.id/images/product/M/92360_M_1.jpg";
 .
 data:14 rdf:type data:handphone;
     data:id "113114";
-    data:title "Xiaomi Mi Note 10";
+    data:title "Xiaomi Mi Note 10 Pro";
     data:brand "Xiaomi";
     data:harga "6950000";
     data:RAM "8 Gb";
     data:ROM "256 Gb";
     data:battery "5260 mAh";
     data:screen "6.47 Inch";
-    data:urlFoto "";
+    data:urlFoto "https://media.pricebook.co.id/images/product/M/91176_M_1.jpg";
 .
 data:15 rdf:type data:handphone;
     data:id "113115";
@@ -167,7 +167,7 @@ data:15 rdf:type data:handphone;
     data:ROM "128 Gb";
     data:battery "5160 mAh";
     data:screen "6.67 Inch";
-    data:urlFoto "";
+    data:urlFoto "https://media.pricebook.co.id/images/product/M/95410_M_1.jpg";
 .
 data:16 rdf:type data:handphone;
     data:id "113116";
@@ -178,7 +178,7 @@ data:16 rdf:type data:handphone;
     data:ROM "256 Gb";
     data:battery "5160 mAh";
     data:screen "6.67 Inch";
-    data:urlFoto "";
+    data:urlFoto "https://media.pricebook.co.id/images/product/M/95411_M_1.jpg";
 .
 data:17 rdf:type data:handphone;
     data:id "113117";
@@ -189,7 +189,7 @@ data:17 rdf:type data:handphone;
     data:ROM "128 Gb";
     data:battery "4300 mAh";
     data:screen "6.5 Inch";
-    data:urlFoto "";
+    data:urlFoto "https://media.pricebook.co.id/images/product/M/93085_M_1.jpg";
 .
 data:18 rdf:type data:handphone;
     data:id "113118";
@@ -200,7 +200,7 @@ data:18 rdf:type data:handphone;
     data:ROM "128 Gb";
     data:battery "4300 mAh";
     data:screen "6.5 Inch";
-    data:urlFoto "";
+    data:urlFoto "https://media.pricebook.co.id/images/product/M/92695_M_1.jpg";
 .
 
 data:19 rdf:type data:handphone;
@@ -212,7 +212,7 @@ data:19 rdf:type data:handphone;
     data:ROM "128 Gb";
     data:battery "5000 mAh";
     data:screen "6.7 Inch";
-    data:urlFoto "";
+    data:urlFoto "https://media.pricebook.co.id/images/product/M/95307_M_1.jpg";
 .
 data:20 rdf:type data:handphone;
     data:id "113120";
@@ -223,5 +223,231 @@ data:20 rdf:type data:handphone;
     data:ROM "256 Gb";
     data:battery "6000 mAh";
     data:screen "6.59 Inch";
-    data:urlFoto "";
+    data:urlFoto "https://media.pricebook.co.id/images/product/M/93574_M_1.jpg";
+.
+
+data:21 rdf:type data:handphone;
+    data:id "113121";
+    data:title "Xiaomi Redmi Note 10";
+    data:brand "Xiaomi";
+    data:harga "2055000";
+    data:RAM "4 Gb";
+    data:ROM "64 Gb";
+    data:battery "5000 mAh";
+    data:screen "6.43 Inch";
+    data:urlFoto "https://media.pricebook.co.id/images/product/M/95360_M_2.jpg";
+.
+
+data:22 rdf:type data:handphone;
+    data:id "113122";
+    data:title "Infinix Note 8";
+    data:brand "Infinix";
+    data:harga "1899000";
+    data:RAM "6 Gb";
+    data:ROM "128 Gb";
+    data:battery "5200 mAh";
+    data:screen "6.95 Inch";
+    data:urlFoto "https://media.pricebook.co.id/images/product/M/94193_M_1.jpg";
+.
+data:23 rdf:type data:handphone;
+    data:id "113123";
+    data:title "Vivo Y12";
+    data:brand "Vivo";
+    data:harga "1549900";
+    data:RAM "3 Gb";
+    data:ROM "64 Gb";
+    data:battery "5000 mAh";
+    data:screen "6.35 Inch";
+    data:urlFoto "https://media.pricebook.co.id/images/product/M/84972_M_1.webp";
+.
+
+data:24 rdf:type data:handphone;
+    data:id "113124";
+    data:title "Realme Narzo 20";
+    data:brand "Realme";
+    data:harga "1499000";
+    data:RAM "4 Gb";
+    data:ROM "64 Gb";
+    data:battery "6000 mAh";
+    data:screen "6.5 Inch";
+    data:urlFoto "https://media.pricebook.co.id/images/product/M/94121_M_1.jpg";
+.
+data:25 rdf:type data:handphone;
+    data:id "113125";
+    data:title "Evercoss M6A";
+    data:brand "Evercoss";
+    data:harga "895000";
+    data:RAM "3 Gb";
+    data:ROM "32 Gb";
+    data:battery "3200 mAh";
+    data:screen "6.1 Inch";
+    data:urlFoto "https://media.pricebook.co.id/images/product/M/94747_M_1.jpg";
+.
+data:26 rdf:type data:handphone;
+    data:id "113126";
+    data:title "Lenovo Vibe P2";
+    data:brand "Lenovo";
+    data:harga "4999000";
+    data:RAM "2 Gb";
+    data:ROM "32 Gb";
+    data:battery "5000 mAh";
+    data:screen "5.5 Inch";
+    data:urlFoto "https://media.pricebook.co.id/images/product/M/52286_M_1.webp";
+.
+data:27 rdf:type data:handphone;
+    data:id "113127";
+    data:title "Sony Xperia ZR C5503";
+    data:brand "Sony";
+    data:harga "1300000";
+    data:RAM "2 Gb";
+    data:ROM "8 Gb";
+    data:battery "2300 mAh";
+    data:screen "4.5 Inch";
+    data:urlFoto "https://media.pricebook.co.id/images/product/M/37393_M_1.webp";
+.
+data:28 rdf:type data:handphone;
+    data:id "113128";
+    data:title "Apple iPhone 7 Plus";
+    data:brand "Apple";
+    data:harga "3499000";
+    data:RAM "3 Gb";
+    data:ROM "128 Gb";
+    data:battery "2900 mAh";
+    data:screen "5.5 Inch";
+    data:urlFoto "https://media.pricebook.co.id/images/product/M/53426_M_1.webp";
+.
+data:29 rdf:type data:handphone;
+    data:id "113129";
+    data:title "OPPO Find X";
+    data:brand "OPOO";
+    data:harga "33499000";
+    data:RAM "8 Gb";
+    data:ROM "512 Gb";
+    data:battery "3400 mAh";
+    data:screen "6.42 Inch";
+    data:urlFoto "https://media.pricebook.co.id/images/product/M/84559_M_1.webp";
+.
+data:30 rdf:type data:handphone;
+    data:id "113130";
+    data:title "Huawei Mate 20 RS Porsche Design";
+    data:brand "Huawei";
+    data:harga "30799000";
+    data:RAM "8 Gb";
+    data:ROM "256 Gb";
+    data:battery "4200 mAh";
+    data:screen "6.39 Inch";
+    data:urlFoto "https://media.pricebook.co.id/images/product/M/80707_M_1.webp";
+.
+data:31 rdf:type data:handphone;
+    data:id "113131";
+    data:title "Samsung Galaxy A32";
+    data:brand "Samsung";
+    data:harga "3400000";
+    data:RAM "8 Gb";
+    data:ROM "128 Gb";
+    data:battery "5000 mAh";
+    data:screen "6.4 Inch";
+    data:urlFoto "https://media.pricebook.co.id/images/product/M/95304_M_1.jpg";
+.
+data:32 rdf:type data:handphone;
+    data:id "113132";
+    data:title "OPPO Reno 4";
+    data:brand "OPPO";
+    data:harga "2949000";
+    data:RAM "8 Gb";
+    data:ROM "128 Gb";
+    data:battery "4000 mAh";
+    data:screen "6.43 Inch";
+    data:urlFoto "https://media.pricebook.co.id/images/product/M/93480_M_1.jpg";
+.
+data:33 rdf:type data:handphone;
+    data:id "113133";
+    data:title "Realme 7";
+    data:brand "Realme";
+    data:harga "2837000";
+    data:RAM "8 Gb";
+    data:ROM "128 Gb";
+    data:battery "5000 mAh";
+    data:screen "6.5 Inch";
+    data:urlFoto "https://media.pricebook.co.id/images/product/M/93624_M_1.jpg";
+.
+data:34 rdf:type data:handphone;
+    data:id "113134";
+    data:title "Lenovo A6000 Plus";
+    data:brand "Lenovo";
+    data:harga "1075000";
+    data:RAM "2 Gb";
+    data:ROM "16 Gb";
+    data:battery "2300 mAh";
+    data:screen "5 Inch";
+    data:urlFoto "https://media.pricebook.co.id/images/product/M/25683_M_1.webp";
+.
+data:35 rdf:type data:handphone;
+    data:id "113135";
+    data:title "Evercoss Elevate Y2 Power";
+    data:brand "Evercoss";
+    data:harga "1678800";
+    data:RAM "2 Gb";
+    data:ROM "16 Gb";
+    data:battery "66200 mAh";
+    data:screen "5 Inch";
+    data:urlFoto "https://media.pricebook.co.id/images/product/M/51821_M_1.webp";
+.
+data:36 rdf:type data:handphone;
+    data:id "113136";
+    data:title "Sony Xperia Z1 Compact D5503";
+    data:brand "Sony";
+    data:harga "3000000";
+    data:RAM "2 Gb";
+    data:ROM "16 Gb";
+    data:battery "2300 mAh";
+    data:screen "4.3 Inch";
+    data:urlFoto "https://media.pricebook.co.id/images/product/M/17987_M_1.webp";
+.
+data:37 rdf:type data:handphone;
+    data:id "113137";
+    data:title "LG G3 Stylus D690";
+    data:brand "LG";
+    data:harga "2675000";
+    data:RAM "1 Gb";
+    data:ROM "8 Gb";
+    data:battery "3000 mAh";
+    data:screen "5.5 Inch";
+    data:urlFoto "https://media.pricebook.co.id/images/product/M/20604_M_1.webp";
+.
+
+data:38 rdf:type data:handphone;
+    data:id "113138";
+    data:title "Sony Xperia L C2105";
+    data:brand "Sony";
+    data:harga "2200000";
+    data:RAM "1 Gb";
+    data:ROM "8 Gb";
+    data:battery "1750 mAh";
+    data:screen "4.3 Inch";
+    data:urlFoto "https://media.pricebook.co.id/images/product/M/5487_M_1.webp";
+.
+
+data:39 rdf:type data:handphone;
+    data:id "113139";
+    data:title "Advan Vandroid S5F+";
+    data:brand "Advan";
+    data:harga "1399300";
+    data:RAM "1 Gb";
+    data:ROM "8 Gb";
+    data:battery "2500 mAh";
+    data:screen "5.7 Inch";
+    data:urlFoto "https://media.pricebook.co.id/images/product/M/23007_M_1.webp";
+.
+
+data:40 rdf:type data:handphone;
+    data:id "113140";
+    data:title "Infinix Zero 4 Plus";
+    data:brand "Infinix";
+    data:harga "3199000";
+    data:RAM "4 Gb";
+    data:ROM "32 Gb";
+    data:battery "4000 mAh";
+    data:screen "5.98 Inch";
+    data:urlFoto "https://media.pricebook.co.id/images/product/M/60386_M_1.webp";
 .
