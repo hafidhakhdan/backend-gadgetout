@@ -461,8 +461,6 @@ data:39 data:haveRAM data:ram1.
 data:40 data:haveRAM data:ram4.
 
 
-
-
 data:rom1 rdf:type data:ROM;
 data:ukuranROM "8 GB".
 data:rom2 rdf:type data:ROM;
