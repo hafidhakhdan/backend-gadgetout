@@ -9,8 +9,8 @@ module.exports.getGadget = async(req, res)=>{
             if(!gadgets.bindings.length){
                 return res.status(200).json({
                     data:[],
-                    message: "Data tidak ditemukan"
-                });
+                    message: 'Pencarian semua data tidak ditemukan'
+                })
             }
             
             gadgets = gadgets.bindings.map((handphone)=>Format(handphone));
@@ -33,7 +33,7 @@ module.exports.getGadget = async(req, res)=>{
         }
     }
 
-    module.exports.getRecommendation = async(req, res)=>{
+module.exports.getRecommendation = async(req, res)=>{
         try{
            
             // Query data dari repo
@@ -41,14 +41,14 @@ module.exports.getGadget = async(req, res)=>{
             if(!gadgets.bindings.length){
                 return res.status(200).json({
                     data:[],
-                    message: "Data tidak ditemukan"
+                    message: " Rekomendasi Data tidak ditemukan"
                 });
             }
             
             gadgets = gadgets.bindings.map((handphone)=>Format(handphone));
                 res.status(200).json({
                     data: gadgets,
-                    message: "Show all perangkat"
+                    message: "Show all rekomendasi"
               
             })
         }catch(err){
@@ -58,7 +58,7 @@ module.exports.getGadget = async(req, res)=>{
 
     module.exports.getAdvancedsearch = async(req, res)=>{
         try{
-            let inputs = req.query.search.split(" ");
+        let inputs = req.query.search.split(" ");
         let outputs = []
             
         // Query data dari connection
@@ -77,7 +77,7 @@ module.exports.getGadget = async(req, res)=>{
         if(!outputs.length){
             return res.status(200).json({
                 data:[],
-                message: "Data tidak ditemukan"
+                message: "Pencarian data tingkat lanjut tidak ditemukan"
             });
         }else{
             res.status(200).json({
@@ -89,4 +89,4 @@ module.exports.getGadget = async(req, res)=>{
     }catch(err){
         res.status(400).json(err);
     }
-    }
+ }

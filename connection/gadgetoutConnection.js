@@ -8,12 +8,12 @@ const headers = {
     'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
 }
 
-exports.getGadget = async(param)=>{
+module.exports.getGadget = async(param)=>{
    // Query
    const queryData = {
     query: `PREFIX data:<http://example.com/>
     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
-    SELECT ?id ?title ?namabrand ?harga ?ukuranRAM ?ukuranROM ?battery ?screen ?urlFoto
+    SELECT ?id ?title ?namaBrand ?harga ?ukuranRAM ?ukuranROM ?battery ?screen ?urlFoto
     WHERE{
         ?sub rdf:type data:handphone
         OPTIONAL {?sub data:id ?id.}
@@ -25,16 +25,14 @@ exports.getGadget = async(param)=>{
         OPTIONAL {?sub data:productBy ?brandid.}
         OPTIONAL {?sub data:haveRAM ?ramid.}
         OPTIONAL {?sub data:haveROM ?romid.}
-        OPTIONAL {?brandid data:namabrand ?namabrand.}
+        OPTIONAL {?brandid data:namaBrand ?namaBrand.}
         OPTIONAL {?ramid data:ukuranRAM ?ukuranRAM.}
         OPTIONAL {?romid data:ukuranROM ?ukuranROM.}
         FILTER regex(?title, "${param.title ? param.title : ''}", "i")
-        FILTER regex(?harga, "${param.harga ? param.harga : ''}", "i")
-        FILTER regex(?namabrand, "${param.brand ? param.brand : ''}", "i")
-        FILTER regex(?ukuranRAM, "${param.RAM ? param.RAM : ''}", "i")
-        FILTER regex(?ukuranROM, "${param.ROM ? param.ROM : ''}", "i")
-        FILTER regex(?battery, "${param.battery ? param.battery : ''}", "i")
-        FILTER regex(?screen, "${param.screen ? param.screen : ''}", "i")
+        FILTER regex(?namaBrand, "${param.namaBrand ? param.namaBrand : ''}", "i")
+        FILTER regex(?ukuranRAM, "${param.ukuranRAM ? param.ukuranRAM : ''}", "i")
+        FILTER regex(?ukuranROM, "${param.ukuranROM ? param.ukuranROM : ''}", "i")
+       
     }`
     };
     try{
@@ -44,19 +42,19 @@ exports.getGadget = async(param)=>{
             data: qs.stringify(queryData)
 
         });
-        console.log(data.results)
+         console.log("ohs")
         return data.results;
     }catch(err){
         res.status(400).json(err);
     }
 };
 
-exports.getRecommendation = async(param)=>{
+module.exports.getRecommendation = async(param)=>{
     // Query
     const queryData = {
     query: `PREFIX data:<http://example.com/>
     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
-    SELECT ?id ?title ?namabrand ?harga ?ukuranRAM ?ukuranROM ?battery ?screen ?urlFoto
+    SELECT ?id ?title ?namaBrand ?harga ?ukuranRAM ?ukuranROM ?battery ?screen ?urlFoto
     WHERE{
         ?sub rdf:type data:handphone
         OPTIONAL {?sub data:id ?id.}
@@ -68,12 +66,12 @@ exports.getRecommendation = async(param)=>{
         OPTIONAL {?sub data:productBy ?brandid.}
         OPTIONAL {?sub data:haveRAM ?ramid.}
         OPTIONAL {?sub data:haveROM ?romid.}
-        OPTIONAL {?brandid data:namabrand ?namabrand.}
+        OPTIONAL {?brandid data:namaBrand ?namaBrand.}
         OPTIONAL {?ramid data:ukuranRAM ?ukuranRAM.}
         OPTIONAL {?romid data:ukuranROM ?ukuranROM.}
-        FILTER regex(?namabrand, "${param.brand ? param.brand : ''}", "i")
-        FILTER regex(?ukuranRAM, "${param.RAM ? param.RAM : ''}", "i")
-        FILTER regex(?ukuranROM, "${param.ROM ? param.ROM : ''}", "i")
+        FILTER regex(?namaBrand, "${param.namaBrand ? param.namaBrand : ''}", "i")
+        FILTER regex(?ukuranRAM, "${param.ukuranRAM ? param.ukuranRAM : ''}", "i")
+        FILTER regex(?ukuranROM, "${param.ukuranROM ? param.ukuranROM : ''}", "i")
        } ORDER BY RAND() LIMIT 3`
     };
     try{
@@ -90,12 +88,12 @@ exports.getRecommendation = async(param)=>{
     }
 };
 
-exports.getAdvancedsearch = async(param)=>{
+module.exports.getAdvancedsearch = async(param)=>{
     // Query
     const queryData = {
     query: `PREFIX data:<http://example.com/>
     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
-    SELECT ?id ?title ?namabrand ?harga ?ukuranRAM ?ukuranROM ?battery ?screen ?urlFoto
+    SELECT ?id ?title ?namaBrand ?harga ?ukuranRAM ?ukuranROM ?battery ?screen ?urlFoto
     WHERE{
         ?sub rdf:type data:handphone
         OPTIONAL {?sub data:id ?id.}
@@ -107,7 +105,7 @@ exports.getAdvancedsearch = async(param)=>{
         OPTIONAL {?sub data:productBy ?brandid.}
         OPTIONAL {?sub data:haveRAM ?ramid.}
         OPTIONAL {?sub data:haveROM ?romid.}
-        OPTIONAL {?brandid data:namabrand ?namabrand.}
+        OPTIONAL {?brandid data:namaBrand ?namaBrand.}
         OPTIONAL {?ramid data:ukuranRAM ?ukuranRAM.}
         OPTIONAL {?romid data:ukuranROM ?ukuranROM.}
         FILTER regex(?title, "${param.search ? param.search : ''}", "i")
@@ -122,10 +120,10 @@ exports.getAdvancedsearch = async(param)=>{
         OPTIONAL {?sub data:productBy ?brandid.}
         OPTIONAL {?sub data:haveRAM ?ramid.}
         OPTIONAL {?sub data:haveROM ?romid.}
-        OPTIONAL {?brandid data:namabrand ?namabrand.}
+        OPTIONAL {?brandid data:namaBrand ?namaBrand.}
         OPTIONAL {?ramid data:ukuranRAM ?ukuranRAM.}
         OPTIONAL {?romid data:ukuranROM ?ukuranROM.}
-        FILTER regex(?namabrand, "${param.search ? param.search : ''}", "i")
+        FILTER regex(?namaBrand, "${param.search ? param.search : ''}", "i")
        } UNION {
         ?sub rdf:type data:handphone
         OPTIONAL {?sub data:id ?id.}
@@ -137,7 +135,7 @@ exports.getAdvancedsearch = async(param)=>{
         OPTIONAL {?sub data:productBy ?brandid.}
         OPTIONAL {?sub data:haveRAM ?ramid.}
         OPTIONAL {?sub data:haveROM ?romid.}
-        OPTIONAL {?brandid data:namabrand ?namabrand.}
+        OPTIONAL {?brandid data:namaBrand ?namaBrand.}
         OPTIONAL {?ramid data:ukuranRAM ?ukuranRAM.}
         OPTIONAL {?romid data:ukuranROM ?ukuranROM.}
         FILTER regex(?ukuranRAM, "${param.search ? param.search : ''}", "i")
@@ -152,7 +150,7 @@ exports.getAdvancedsearch = async(param)=>{
         OPTIONAL {?sub data:productBy ?brandid.}
         OPTIONAL {?sub data:haveRAM ?ramid.}
         OPTIONAL {?sub data:haveROM ?romid.}
-        OPTIONAL {?brandid data:namabrand ?namabrand.}
+        OPTIONAL {?brandid data:namaBrand ?namaBrand.}
         OPTIONAL {?ramid data:ukuranRAM ?ukuranRAM.}
         OPTIONAL {?romid data:ukuranROM ?ukuranROM.}
         FILTER regex(?ukuranROM, "${param.search ? param.search : ''}", "i")
@@ -171,4 +169,4 @@ exports.getAdvancedsearch = async(param)=>{
         res.status(400).json(err);
     }
 };
-module.exports = exports;
+// module.exports = exports;
