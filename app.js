@@ -25,12 +25,12 @@ app.get('/', (req, res) => {
 
 app.use('/api', routes);
 
-app.listen(5000, () => {
-    console.log(`Listening to port 5000`);
-});
-// app.listen(process.env.PORT || 5000, function(){
-//     console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
-//   });
+// app.listen(5000, () => {
+//     console.log(`Listening to port 5000`);
+// });
+app.listen(process.env.PORT || 5000, function(){
+    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+  });
 
 // catch 404 and forward to error handler
 
