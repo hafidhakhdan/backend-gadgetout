@@ -10,6 +10,11 @@ app.use(bodyParser.urlencoded({extended: true}));
  app.use(bodyParser.json());
 app.use(cors());
 
+const config = {
+    PORT: process.env.PORT || '3000',
+    ENV: process.env.NODE_ENV || 'development',
+}
+
 app.get('/', (req, res) => {
     res.status(200).json({
         status: 200,
@@ -20,8 +25,12 @@ app.get('/', (req, res) => {
 
 app.use('/api', routes);
 
-app.listen(5000, () => {
-    console.log(`Listening to port 5000`);
+// app.listen(5000, () => {
+//     console.log(`Listening to port 5000`);
+// });
+
+app.listen(config.PORT, () => {
+    console.log(`starting ${config.ENV} server at http://localhost:${config.PORT}`);
 });
 
 // catch 404 and forward to error handler
