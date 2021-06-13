@@ -28,10 +28,9 @@ app.use('/api', routes);
 // app.listen(5000, () => {
 //     console.log(`Listening to port 5000`);
 // });
-
-app.listen(config.PORT, () => {
-    console.log(`starting ${config.ENV} server at http://localhost:${config.PORT}`);
-});
+app.listen(process.env.PORT || 5000, function(){
+    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+  });
 
 // catch 404 and forward to error handler
 
