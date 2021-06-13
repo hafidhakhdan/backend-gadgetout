@@ -405,19 +405,19 @@ data:39 data:productBy data:brand3.
 data:40 data:productBy data:brand1.
 
 data:ram1 rdf:type data:RAM;
-data:ukuranRAM "1 GB".
+data:ukuranRAM "1GB".
 data:ram2 rdf:type data:RAM;
-data:ukuranRAM "2 GB".
+data:ukuranRAM "2GB".
 data:ram3 rdf:type data:RAM;
-data:ukuranRAM "3 GB".
+data:ukuranRAM "3GB".
 data:ram4 rdf:type data:RAM;
-data:ukuranRAM "4 GB".
+data:ukuranRAM "4GB".
 data:ram5 rdf:type data:RAM;
-data:ukuranRAM "6 GB".
+data:ukuranRAM "6GB".
 data:ram6 rdf:type data:RAM;
-data:ukuranRAM "8 GB".
+data:ukuranRAM "8GB".
 data:ram7 rdf:type data:RAM;
-data:ukuranRAM "12 GB".
+data:ukuranRAM "12GB".
 
 data:1 data:haveRAM data:ram6.
 data:2 data:haveRAM data:ram5.
@@ -462,19 +462,19 @@ data:40 data:haveRAM data:ram4.
 
 
 data:rom1 rdf:type data:ROM;
-data:ukuranROM "8 GB".
+data:ukuranROM "8GB".
 data:rom2 rdf:type data:ROM;
-data:ukuranROM "16 GB".
+data:ukuranROM "16GB".
 data:rom3 rdf:type data:ROM;
-data:ukuranROM "32 GB".
+data:ukuranROM "32GB".
 data:rom4 rdf:type data:ROM;
-data:ukuranROM "64 GB".
+data:ukuranROM "64GB".
 data:rom5 rdf:type data:ROM;
-data:ukuranROM "128 GB".
+data:ukuranROM "128GB".
 data:rom6 rdf:type data:ROM;
-data:ukuranROM "256 GB".
+data:ukuranROM "256GB".
 data:rom7 rdf:type data:ROM;
-data:ukuranROM "512 GB".
+data:ukuranROM "512GB".
 
 data:1 data:haveROM data:rom5.
 data:2 data:haveROM data:rom4.

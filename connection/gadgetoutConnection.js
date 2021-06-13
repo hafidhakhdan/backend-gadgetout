@@ -28,10 +28,6 @@ module.exports.getGadget = async(param)=>{
         OPTIONAL {?brandid data:namaBrand ?namaBrand.}
         OPTIONAL {?ramid data:ukuranRAM ?ukuranRAM.}
         OPTIONAL {?romid data:ukuranROM ?ukuranROM.}
-        FILTER regex(?title, "${param.title ? param.title : ''}", "i")
-        FILTER regex(?namaBrand, "${param.namaBrand ? param.namaBrand : ''}", "i")
-        FILTER regex(?ukuranRAM, "${param.ukuranRAM ? param.ukuranRAM : ''}", "i")
-        FILTER regex(?ukuranROM, "${param.ukuranROM ? param.ukuranROM : ''}", "i")
        
     }`
     };
@@ -94,7 +90,7 @@ module.exports.getAdvancedsearch = async(param)=>{
     query: `PREFIX data:<http://example.com/>
     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
     SELECT ?id ?title ?namaBrand ?harga ?ukuranRAM ?ukuranROM ?battery ?screen ?urlFoto
-    WHERE{
+    WHERE{{
         ?sub rdf:type data:handphone
         OPTIONAL {?sub data:id ?id.}
         OPTIONAL {?sub data:title ?title.}
@@ -154,7 +150,7 @@ module.exports.getAdvancedsearch = async(param)=>{
         OPTIONAL {?ramid data:ukuranRAM ?ukuranRAM.}
         OPTIONAL {?romid data:ukuranROM ?ukuranROM.}
         FILTER regex(?ukuranROM, "${param.search ? param.search : ''}", "i")
-       }`
+       }}`
     };
     try{
         const {data} = await axios(`${DATA_URL}/GadgetOut/query`,{
@@ -169,4 +165,45 @@ module.exports.getAdvancedsearch = async(param)=>{
         res.status(400).json(err);
     }
 };
+
+module.exports.getFilter = async(param)=>{
+    // Query
+    const queryData = {
+     query: `PREFIX data:<http://example.com/>
+     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+     SELECT ?id ?title ?namaBrand ?harga ?ukuranRAM ?ukuranROM ?battery ?screen ?urlFoto
+     WHERE{
+         ?sub rdf:type data:handphone
+         OPTIONAL {?sub data:id ?id.}
+         OPTIONAL {?sub data:title ?title.}
+         OPTIONAL {?sub data:harga ?harga.}
+         OPTIONAL {?sub data:battery ?battery.}
+         OPTIONAL {?sub data:screen ?screen.}
+         OPTIONAL {?sub data:urlFoto ?urlFoto.}
+         OPTIONAL {?sub data:productBy ?brandid.}
+         OPTIONAL {?sub data:haveRAM ?ramid.}
+         OPTIONAL {?sub data:haveROM ?romid.}
+         OPTIONAL {?brandid data:namaBrand ?namaBrand.}
+         OPTIONAL {?ramid data:ukuranRAM ?ukuranRAM.}
+         OPTIONAL {?romid data:ukuranROM ?ukuranROM.}
+         FILTER regex(?title, "${param.title ? param.title : ''}", "i")
+         FILTER regex(?namaBrand, "${param.namaBrand ? param.namaBrand : ''}", "i")
+         FILTER regex(?ukuranRAM, "${param.ukuranRAM ? param.ukuranRAM : ''}", "i")
+         FILTER regex(?ukuranROM, "${param.ukuranROM ? param.ukuranROM : ''}", "i")
+         FILTER(?harga > ${param.min} && ?harga < ${param.max})
+     }`
+     };
+     try{
+         const {data} = await axios(`${DATA_URL}/GadgetOut/query`,{
+             method: 'POST',
+             headers,
+             data: qs.stringify(queryData)
+ 
+         });
+        
+         return data.results;
+     }catch(err){
+         res.status(400).json(err);
+     }
+ };
 // module.exports = exports;
