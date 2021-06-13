@@ -37,13 +37,13 @@ module.exports.getGadget = async(req, res)=>{
         try{
             console.log("function starting")
             // Query data dari repo
-            let gadgets = await connection.getGadget(req.query);
-            if(!gadgets.bindings.length){
-                return res.status(200).json({
-                    data:[],
-                    message: 'Pencarian semua data tidak ditemukan'
-                })
-            }
+            // let gadgets = await connection.getGadget(req.query);
+            // if(!gadgets.bindings.length){
+            //     return res.status(200).json({
+            //         data:[],
+            //         message: 'Pencarian semua data tidak ditemukan'
+            //     })
+            // }
             
             gadgets = gadgets.bindings.map((handphone)=>Format(handphone));
             if(req.params.id){
