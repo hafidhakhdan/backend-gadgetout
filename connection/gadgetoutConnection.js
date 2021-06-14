@@ -28,6 +28,7 @@ module.exports.getGadget = async(param)=>{
         OPTIONAL {?brandid data:namaBrand ?namaBrand.}
         OPTIONAL {?ramid data:ukuranRAM ?ukuranRAM.}
         OPTIONAL {?romid data:ukuranROM ?ukuranROM.}
+        
        
     }`
     };
@@ -190,7 +191,7 @@ module.exports.getFilter = async(param)=>{
          FILTER regex(?namaBrand, "${param.namaBrand ? param.namaBrand : ''}", "i")
          FILTER regex(?ukuranRAM, "${param.ukuranRAM ? param.ukuranRAM : ''}", "i")
          FILTER regex(?ukuranROM, "${param.ukuranROM ? param.ukuranROM : ''}", "i")
-         FILTER(?harga > ${param.min} && ?harga < ${param.max})
+         
      }`
      };
      try{
